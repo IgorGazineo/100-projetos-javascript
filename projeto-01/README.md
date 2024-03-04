@@ -91,7 +91,6 @@ horizontal com relação ao elemento pai (body)</li>
             <li>peso da fonte: normal</li>
             <li>arredondamento das bordas: 5px</li>
             <li>espaçamento interno entre as bordas horizontais: 10px</li>
-            <li></li>
         </ul>
     </li>
 </ul>
