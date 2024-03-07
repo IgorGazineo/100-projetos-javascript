@@ -3,17 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Tarefas</title>
+    <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="total-calc.js" defer></script>
   </head>
   <body>
     <main>
-      <section class="container">
-        <h1>Lista de Tarefas</h1>
-        <input type="text" placeholder="Digite uma nova tarefa" />
-        <button>Adicionar</button>
+      <section class="total-calculator calculator-container">
+        <h2>Total Calculator</h2>
+        <p>Enter the bill amount and tip percentage to calculate the total.</p>
+        <form>
+          <ul>
+            <li>
+              <label for="bill-amount-total-calc">Bill amount:</label>
+              <input
+                type="number"
+                name="bill-amount-total-calc"
+                id="bill-amount-total-calc"
+              />
+            </li>
+            <li>
+              <label for="tip-percentage-total-calc">Tip percentage:</label>
+              <input
+                type="number"
+                name="tip-percentage-total-calc"
+                id="tip-percentage-total-calc"
+              />
+            </li>
+          </ul>
+          <button id="total-calc-btn" type="button">Calculate</button>
+        </form>
+        <div class="result" id="tip-result">
+          <p>Total: <span>00.0</span></p>
+        </div>
+      </section>
+
+      <section class="tip-calculator calculator-container">
+        <h2>Tip Calculator</h2>
+        <p>Enter the bill amount and tip percentage to calculate the tip.</p>
+
+        <form>
+          <ul>
+            <li>
+              <label for="bill-amount-tip-cal">Bill amount:</label>
+              <input
+                type="number"
+                name="bill-amount-tip-cal"
+                id="bill-amount-tip-cal"
+              />
+            </li>
+
+            <li>
+              <label for="tip-amount-tip-cal">Tip percentage:</label>
+              <input
+                type="number"
+                name="tip-amount-tip-cal"
+                id="tip-amount-tip-cal"
+              />
+            </li>
+          </ul>
+          <button id="tip-calc-btn" type="button">Calculate</button>
+        </form>
+        <div class="result" id="tip-result">
+          <p>Tip: <span>00.0</span></p>
+        </div>
       </section>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>

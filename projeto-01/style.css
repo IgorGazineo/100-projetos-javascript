@@ -2,57 +2,95 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  background-color: #f4f4f4;
-  height: 100vh;
+  background-color: #f2f2f2;
   font-family: sans-serif;
+  margin: 0;
 }
 
-.container {
-  width: 340.16px;
-  border: 1px solid #767676;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
+main {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
 }
 
-.container h1 {
-  font-size: 32px;
-}
-
-.container input {
-  padding: 10px;
-  border: 1px solid #767676;
-  border-radius: 2px;
-  display: block;
-  margin: 0 auto 20px;
-  font-size: 16px;
-  width: 224px;
-  box-sizing: border-box;
-}
-
-.container button {
-  border: none;
-  border-radius: 5px;
-  font-family: inherit;
-  font-size: 16px;
-  color: #fff;
-  background-color: #3498db;
-  padding: 10px 17px;
-  cursor: pointer;
-}
-
-.container button:hover {
-  background-color: #2980b9;
-}
-
-.container p {
+.calculator-container {
+  width: 600px;
   background-color: #fff;
-  text-align: center;
-  word-wrap: break-word;
-  padding: 10px;
-  width: 310px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 20px;
   box-sizing: border-box;
-  border-radius: 5px;
-  margin: 10px auto 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-container h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.calculator-container p {
+  margin: 16px 0;
+}
+
+.calculator-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calculator-container input,
+.calculator-container label {
+  display: block;
+  margin: 10px 0;
+}
+
+.calculator-container input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.calculator-container button {
+  width: 100%;
+  margin: 10px 0;
+  height: 41px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.result p {
+  margin: 0;
+}
+
+.result span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media (max-width: 1300px) {
+  main {
+    flex-wrap: wrap;
+  }
+  .calculator-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 931px) {
+  main {
+    height: auto;
+  }
+  body {
+    padding: 2rem 0;
+  }
 }
