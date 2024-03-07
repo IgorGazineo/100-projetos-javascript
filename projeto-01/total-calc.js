@@ -1,10 +1,13 @@
-const billInputElement = document.getElementById("bill-amount-total-calc");
-const tipInputElement = document.getElementById("tip-percentage-total-calc");
+const billInputElementTotal = document.getElementById("bill-amount-total-calc");
+const tipInputElementTotal = document.getElementById(
+  "tip-percentage-total-calc"
+);
 const totalCalcBtn = document.getElementById("total-calc-btn");
-const totalSpanElement = document.querySelector("#tip-result span");
+const totalSpanElement = document.querySelector("#total-result span");
+
 function calcTotalBill() {
-  const billValue = +billInputElement.value;
-  const tipValue = +tipInputElement.value;
+  const billValue = +billInputElementTotal.value;
+  const tipValue = +tipInputElementTotal.value;
   const total = billValue + (tipValue / 100) * billValue;
   console.log(total);
   totalSpanElement.textContent = total.toFixed(2);

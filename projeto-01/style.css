@@ -66,6 +66,12 @@ main {
   border: none;
   font-size: 18px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.calculator-container button:hover {
+  background-color: #327234;
 }
 
 .result p {
