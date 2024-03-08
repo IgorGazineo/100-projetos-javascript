@@ -18,24 +18,24 @@ main {
 }
 
 .calculator-container {
-  width: 600px;
+  width: 37.5rem;
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 1.25rem;
+  margin: 1.25rem 0;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .calculator-container h2 {
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .calculator-container p {
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .calculator-container ul {
@@ -47,7 +47,7 @@ main {
 .calculator-container input,
 .calculator-container label {
   display: block;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 .calculator-container input {
@@ -60,12 +60,12 @@ main {
 
 .calculator-container button {
   width: 100%;
-  margin: 10px 0;
-  height: 41px;
+  margin: 0.625rem 0;
+  height: 2.5625rem;
   background-color: #4caf50;
   color: #fff;
   border: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.5s;
@@ -81,15 +81,27 @@ main {
 
 .result span {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81.25rem) {
   main {
     flex-wrap: wrap;
     height: auto;
   }
   .calculator-container {
-    max-width: 400px;
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 25rem) {
+  :root {
+    font-size: 10px;
   }
 }
